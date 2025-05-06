@@ -79,10 +79,26 @@ async function fetchLogo() {
          * Irá trabalhar em cima de cada dado da empresa
          */
         companyData.forEach(([name, content]) => {
-            if (name === 'Logo') {
-                const container = document.getElementById('image-logo');
-                container.src = content; // Link da imagem
+            switch (name) {
+                case 'Logo':
+                    const imageLogo = document.getElementById('image-logo');
+                    imageLogo.src = content; // Link da imagem
+                    break
+
+                case 'Whatsapp':
+                    if (!!content) {
+                        const whatsappButton = document.getElementById('whatsapp-button');
+
+                        const whatsappNumber = document.getElementById('whatsapp-number');
+                        whatsappNumber.href = `https://wa.me/55${content}`; // Número do WhatsApp
+
+                        whatsappNumber.classList.remove('disabled');
+                        whatsappButton.classList.remove('disabled');
+                        whatsappButton.classList.add('whatsapp-button');
+                    }
+                    break
             }
+
         });
 
     } catch (error) {

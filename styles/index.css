@@ -6,6 +6,12 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
