@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Upload de Imagem</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img id="image-logo" alt="logo-loja">
+        </div>
+
+        <button class="logout-button" onclick="window.location.href='./index.html'">Sair</button>
+    </header>
+
+    <main>
+        <div class="catalog-title">Área Administrativa - Upload de Imagem</div>
+
+        <div style="margin: 2rem;">
+            <input type="file" id="fileInput" accept="image/*" class="form-input" />
+            <br><br>
+            <input type="text" id="customName" placeholder="Nome da imagem (sem extensão)" class="form-input" />
+            <br><br>
+            <button id="uploadButton" class="form-button">Enviar Imagem</button>
+            <p id="message" style="color: red;"></p>
+        </div>
+    </main>
+
+    <div id="popup"
+        style="display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -30%); background: white; border: 1px solid #ccc; padding: 20px; z-index: 1000; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+        <p id="popupText"></p>
+        <button id="copyButton">Copiar Link</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Minha Loja. Todos os direitos reservados.
+    </footer>
+
+    <script src="./scripts/admin.js"></script>
+</body>
+
+</html>
