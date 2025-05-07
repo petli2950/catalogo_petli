@@ -1,7 +1,7 @@
 const senhaCorreta = "admin123"; // <- Altere a senha aqui
 
-const cloudName = 'dqhc0gy9d';
-const uploadPreset = 'ml_default';
+const cloudName = 'dpukuosyw';
+const uploadPreset = 'catalogo_petli_preset';
 
 window.onload = function () {
     const senha = prompt("Digite a senha para acessar:");

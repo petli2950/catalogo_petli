@@ -1,8 +1,8 @@
 const RANGE_LOGO = 'Página2!A1:B'; // Planilha de Informações (Logo)
 const RANGE_PRODUCTS = 'Página1!A2:C'; // Planilha de Produtos para o catálogo
 
-const API_KEY = 'AIzaSyCDh0IRBzl2NL0Gc84qceyTHZXlS5M5bek';
-const SHEET_ID = '1RBJCnXHT6JUCSBHi_TQtNaSISwrGOyKoihILpQ-FSjM';
+const API_KEY = 'AIzaSyBdoqeEL9YJd_KpaMOKe3aSFw3q3TmSI9o';
+const SHEET_ID = '1rFBNEH41pg5zXtEDkdYXsBdARuHVQe0v2BbCSDuz5vk';
 
 async function fetchProdutos() {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE_PRODUCTS}?key=${API_KEY}`;
